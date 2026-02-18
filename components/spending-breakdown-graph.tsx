@@ -43,8 +43,10 @@ export default function SpendingBreakdownGraph() {
   };
 
   return (
-    <div className="bg-white rounded-xl shadow p-5 w-full">
-      <h2 className="text-sm font-bold text-gray-900">Spending Breakdown</h2>
+    <div className="bg-white dark:bg-gray-800 dark:border dark:border-gray-700 rounded-xl shadow p-5 w-full">
+      <h2 className="text-sm font-bold text-gray-900 dark:text-white">
+        Spending Breakdown
+      </h2>
       <div className="flex">
         <div className="w-full h-36 rounded-lg flex items-start justify-start text-gray-500">
           <ReactECharts
@@ -63,11 +65,11 @@ export default function SpendingBreakdownGraph() {
                   className="w-3 h-3 rounded-full"
                   style={{ backgroundColor: item.color }}
                 />
-                <span className="text-xs font-semibold text-gray-700">
+                <span className="text-xs font-semibold text-gray-700 dark:text-gray-300">
                   {item.name}
                 </span>
               </div>
-              <span className="text-xs font-bold text-gray-900">
+              <span className="text-xs font-bold text-gray-900 dark:text-white">
                 {item.value}%
               </span>
             </div>

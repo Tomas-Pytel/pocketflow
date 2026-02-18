@@ -17,7 +17,7 @@ export default function NavigationLink({
   return (
     <Link
       href={href}
-      className={`hover:text-orange-700 px-3 py-2 rounded-md text-xs font-medium ${className} 
+      className={`hover:text-orange-500 px-3 py-2 rounded-md text-xs font-medium ${className} 
       ${isActive ? "text-orange-500" : "text-gray-400"}`}
     >
       {children}
