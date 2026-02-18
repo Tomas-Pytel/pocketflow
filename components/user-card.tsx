@@ -18,7 +18,9 @@ export default function UserCard({
       />
       <div className="flex flex-col">
         <span className="text-xs text-gray-500">Welcome back,</span>
-        <span className="text-xs font-semibold text-gray-700">{name}</span>
+        <span className="text-xs font-semibold text-gray-700 dark:text-white">
+          {name}
+        </span>
       </div>
     </div>
   );

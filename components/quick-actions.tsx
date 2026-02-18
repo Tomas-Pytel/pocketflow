@@ -19,10 +19,10 @@ const actions = [
 export default function QuickActions() {
   return (
     <div className="w-full mt-1">
-      <h2 className="text-md font-semibold text-gray-500 mb-2">
+      <h2 className="text-md font-semibold text-gray-500 dark:text-white mb-2">
         Quick Actions
       </h2>
-      <ul className="flex justify-between gap-4">
+      <ul className="flex justify-between gap-3">
         {actions.map((action) => (
           <li key={action.name} className="flex items-center cursor-pointer ">
             <QuickAction title={action.name} icon={action.icon} />

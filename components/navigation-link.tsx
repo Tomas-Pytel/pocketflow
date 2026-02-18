@@ -1,4 +1,6 @@
+"use client";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export default function NavigationLink({
   href,
@@ -9,10 +11,14 @@ export default function NavigationLink({
   children: React.ReactNode;
   className?: string;
 }) {
+  const pathname = usePathname();
+  const isActive = pathname === href;
+
   return (
     <Link
       href={href}
-      className={`text-orange-500 hover:text-orange-700 px-3 py-2 rounded-md text-xs font-medium ${className}`}
+      className={`hover:text-orange-700 px-3 py-2 rounded-md text-xs font-medium ${className} 
+      ${isActive ? "text-orange-500" : "text-gray-400"}`}
     >
       {children}
     </Link>
