@@ -1,5 +1,5 @@
 import { FaFileInvoiceDollar } from "react-icons/fa6";
-import { textColorsMapping } from "./colors";
+import { textColorsMapping } from "../lib/colors";
 import { FaMoneyBills } from "react-icons/fa6";
 import { FaCoffee } from "react-icons/fa";
 import BudgetCard from "./budget-card";

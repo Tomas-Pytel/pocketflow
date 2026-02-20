@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import { bgColorsMapping } from "./colors";
+import { bgColorsMapping } from "../lib/colors";
 import { Progress } from "@/components/ui/progress";
 
 interface BudgetCardProps {

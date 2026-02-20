@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Geist } from "next/font/google";
 import { ThemeProvider } from "next-themes";
 import "./globals.css";
-import BottomNavigation from "@/components/bottom-navigation";
 
 const defaultUrl = process.env.VERCEL_URL
   ? `https://${process.env.VERCEL_URL}`
@@ -33,10 +32,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <div className="bg-gray-100 dark:bg-gray-900 min-h-screen flex flex-col">
-            {children}
-            <BottomNavigation />
-          </div>
+          {children}
         </ThemeProvider>
       </body>
     </html>
