@@ -1,4 +1,4 @@
-import NavigationLink from "../navigation-link";
+import NavigationLink from "./navigation-link";
 import { IoHome } from "react-icons/io5";
 import { MdWallet } from "react-icons/md";
 import { FaPiggyBank } from "react-icons/fa6";
