@@ -3,7 +3,7 @@ import QuickActions from "@/components/quick-actions";
 import RecentTransactionsList from "@/components/recent-transactions-list";
 import SpendingBreakdownGraph from "@/components/spending-breakdown-graph";
 import { ThemeSwitcher } from "@/components/theme-switcher";
-import TopNavigation from "@/components/top-navigation";
+import TopNavigation from "@/components/navigation/top-navigation";
 import TotalBalanceCard from "@/components/total-balance-card";
 import UserCard from "@/components/user-card";
 

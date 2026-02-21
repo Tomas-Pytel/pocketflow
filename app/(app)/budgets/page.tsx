@@ -1,6 +1,6 @@
 import BudgetsStatus from "@/components/budget-status";
 import BudgetsList from "@/components/budgets-list";
-import TopNavigation from "@/components/top-navigation";
+import TopNavigation from "@/components/navigation/top-navigation";
 import { Button } from "@/components/ui/button";
 import {
   Card,
