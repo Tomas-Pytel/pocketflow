@@ -9,7 +9,7 @@ export default function AppLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const isDesktop = useMediaQuery("(min-width: 1024px)");
+  const isDesktop = useMediaQuery("(min-width: 768px)");
   return isDesktop ? (
     <DesktopLayout>{children}</DesktopLayout>
   ) : (
