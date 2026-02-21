@@ -8,7 +8,7 @@ export default function DesktopLayout({
   return (
     <div className="bg-gray-100 dark:bg-gray-900 min-h-screen flex flex-row">
       <Sidebar />
-      {children}
+      <div className="flex-1">{children}</div>
     </div>
   );
 }

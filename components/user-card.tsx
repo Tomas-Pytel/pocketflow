@@ -14,7 +14,7 @@ export default function UserCard({
         alt={name}
         width={30}
         height={30}
-        className="rounded-full border-2 border-orange-500"
+        className="rounded-full border-2 border-orange-400"
       />
       <div className="flex flex-col">
         <span className="text-xs text-gray-500">Welcome back,</span>

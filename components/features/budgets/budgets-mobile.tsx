@@ -1,6 +1,6 @@
 import BudgetsStatus from "@/components/budget-status";
 import BudgetsList from "@/components/budgets-list";
-import TopNavigation from "@/components/navigation/top-navigation";
+import TopNavigationMobile from "@/components/navigation/top-navigation-mobile";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -18,9 +18,9 @@ export default function BudgetsMobile({ className }: PageComponentProps) {
     <main
       className={`min-h-screen flex flex-col bg-white items-center pt-16 pb-24 overflow-auto ${className}`}
     >
-      <TopNavigation title="Budgets" backButton={true}>
+      <TopNavigationMobile title="Budgets" backButton={true}>
         <SlOptions className="h-5 w-5 text-gray-500 dark:text-gray-100 hover:text-gray-700" />
-      </TopNavigation>
+      </TopNavigationMobile>
       <div className="flex flex-col max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full gap-3">
         <Suspense fallback={null}>
           <BudgetsStatus />
@@ -46,7 +46,7 @@ export default function BudgetsMobile({ className }: PageComponentProps) {
         <BudgetsList />
         <Button
           variant="outline"
-          className="w-full bg-gradient-to-r p-7 rounded-xl from-orange-500 to-yellow-500 text-white"
+          className="w-full  p-7 rounded-xl bg-gradient-to-r from-orange-500 to-yellow-500 text-white"
         >
           <div className="bg-white flex rounded-full text-orange-500 font-bold">
             <Plus className="h-4 w-4" />

@@ -1,6 +1,6 @@
 import { IoMdArrowBack } from "react-icons/io";
 
-interface TopNavigationProps {
+interface TopNavigationMobileProps {
   title?: string;
   userCard?: React.ReactNode;
   children?: React.ReactNode;
@@ -8,13 +8,13 @@ interface TopNavigationProps {
   backButton?: boolean;
 }
 
-export default function TopNavigation({
+export default function TopNavigationMobile({
   children,
   title,
   className,
   userCard,
   backButton = false,
-}: TopNavigationProps) {
+}: TopNavigationMobileProps) {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 dark:bg-gray-900 z-50 ${className || ""} ${backButton ? "border-b border-gray-100 dark:border-gray-700 bg-white" : "bg-gray-50"}`}

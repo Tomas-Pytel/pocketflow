@@ -36,7 +36,7 @@ const links: NavLinkProps[] = [
 
 export default function BottomNavigation() {
   return (
-    <nav className="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 dark:bg-gray-800 dark:border-gray-700 z-50">
+    <nav className=" md:hidden fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 dark:bg-gray-800 dark:border-gray-700 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="w-full h-20">
           <ul className="flex items-center justify-between h-full">
@@ -46,7 +46,7 @@ export default function BottomNavigation() {
                   key={link.href}
                   href={link.href}
                   title={link.title}
-                  className="flex flex-col items-center space-y-2"
+                  className="flex flex-col text-xs items-center space-y-2"
                 >
                   {link.children}
                 </NavigationLink>

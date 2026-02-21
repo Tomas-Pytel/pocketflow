@@ -1,4 +1,4 @@
-import TopNavigation from "@/components/navigation/top-navigation";
+import TopNavigationMobile from "@/components/navigation/top-navigation-mobile";
 import NotificationsBell from "@/components/notifications-bell";
 import QuickActions from "@/components/quick-actions";
 import RecentTransactionsList from "@/components/recent-transactions-list";
@@ -16,10 +16,10 @@ export default function DashboardMobile({ className }: PageComponentProps) {
     <main
       className={`min-h-screen flex flex-col items-center pt-16 pb-24 overflow-auto ${className || ""}`}
     >
-      <TopNavigation userCard={<UserCard name="Tomas" />}>
+      <TopNavigationMobile userCard={<UserCard name="Tomas" />}>
         <NotificationsBell />
         <ThemeSwitcher />
-      </TopNavigation>
+      </TopNavigationMobile>
       <div className="flex flex-col max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full gap-5">
         <TotalBalanceCard />
         <QuickActions />
