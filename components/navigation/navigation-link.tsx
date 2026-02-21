@@ -2,15 +2,19 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-export default function NavigationLink({
-  href,
-  children,
-  className = "",
-}: {
+interface NavigationLinkProps {
   href: string;
+  title: string;
   children: React.ReactNode;
   className?: string;
-}) {
+}
+
+export default function NavigationLink({
+  href,
+  title,
+  children,
+  className = "",
+}: NavigationLinkProps) {
   const pathname = usePathname();
   const isActive = pathname === href;
 
@@ -21,6 +25,7 @@ export default function NavigationLink({
       ${isActive ? "text-orange-500" : "text-gray-400"}`}
     >
       {children}
+      <span>{title}</span>
     </Link>
   );
 }
