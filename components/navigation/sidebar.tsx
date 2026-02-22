@@ -7,7 +7,7 @@ import { NAV_LINKS } from "@/constants/navigation";
 
 export default function Sidebar() {
   return (
-    <aside className="hidden md:flex flex-col w-64 px-5 bg-white border-r border-gray-200 dark:bg-gray-800 dark:border-gray-700 sticky top-0">
+    <aside className="hidden md:flex flex-col w-64 px-5 bg-white border-r border-gray-200 dark:bg-gray-800 dark:border-gray-700 sticky top-0 gap-3">
       <div className="flex items-center gap-3 text-2xl font-bold p-4 dark:text-white ">
         <Image
           height={32}

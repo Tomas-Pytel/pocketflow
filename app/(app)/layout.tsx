@@ -1,4 +1,5 @@
 import BottomNavigation from "@/components/navigation/bottom-navigation";
+import Navbar from "@/components/navigation/navbar";
 import Sidebar from "@/components/navigation/sidebar";
 
 export default function AppLayout({
@@ -12,9 +13,13 @@ export default function AppLayout({
       <Sidebar />
 
       {/**MAIN CONTENT */}
-      <main className="flex-1 overflow-y-auto p-4 pb-24 md:pb-4">
-        <div className="h-28 bg-gray-50"></div>
-        {children}
+      <main className="flex flex-col flex-1">
+        <div className="hidden md:block h-14">
+          <Navbar />
+        </div>
+        <div className="flex-1 overflow-y-auto p-5 pb-24 md:pb-5">
+          {children}
+        </div>
       </main>
 
       {/**MOBILE NAVIGATION - visible only on mobile*/}

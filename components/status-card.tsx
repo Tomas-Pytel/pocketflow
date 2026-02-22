@@ -11,7 +11,7 @@ interface BudgetCardProps {
   icon?: ReactNode;
 }
 
-export default function BudgetCard({
+export default function StatusCard({
   description,
   amount,
   max,

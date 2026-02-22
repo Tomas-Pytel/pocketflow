@@ -2,7 +2,7 @@ import { FaFileInvoiceDollar } from "react-icons/fa6";
 import { textColorsMapping } from "../lib/colors";
 import { FaMoneyBills } from "react-icons/fa6";
 import { FaCoffee } from "react-icons/fa";
-import BudgetCard from "./budget-card";
+import StatusCard from "./status-card";
 
 export default function BudgetsList() {
   const budgets = [
@@ -50,7 +50,7 @@ export default function BudgetsList() {
       <ul className="space-y-3 mt-4">
         {budgets.map((budget) => (
           <li key={budget.id} className="flex justify-between items-center">
-            <BudgetCard
+            <StatusCard
               id={budget.id}
               description={budget.description}
               amount={budget.amount}
