@@ -5,7 +5,7 @@ export default function BudgetsPage() {
   return (
     <>
       <BudgetsDesktop className="hidden md:block" />
-      <BudgetsMobile className="block md:hidden" />
+      <BudgetsMobile />
     </>
   );
 }
