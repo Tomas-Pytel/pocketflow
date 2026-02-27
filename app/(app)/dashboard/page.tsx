@@ -26,22 +26,32 @@ export default function Dashboard() {
       </div>
 
       {/**----- DESKTOP LAYOUT ----- */}
-      <div className="hidden md:grid grid-cols-12 gap-4">
-        <div className="col-span-12 py-4 ">
+      <div className="hidden md:flex flex-col h-full">
+        <div className="col-span-12 py-4 shrink-0">
           <p className="text-2xl font-bold">Dashboard Overview</p>
           <p className="text-md">Here is your quick summary</p>
         </div>
-        <div className="col-span-9 h-80">
-          <DashboardBalance
-            totalBalance={12000}
-            expenses={1500}
-            savings={800}
-            income={2000}
-            spendingsByMonth={[
-              { month: "January", spendings: 150 },
-              { month: "February", spendings: 500 },
-            ]}
-          />
+
+        <div className="grid grid-cols-12 flex-1 gap-4">
+          <div className="col-span-9 space-y-4">
+            <div className="h-52">
+              <DashboardBalance
+                totalBalance={12000}
+                expenses={1500}
+                savings={800}
+                income={2000}
+              />
+            </div>
+            <div className="h-42">
+              <QuickActions />
+            </div>
+            <div className="h-64">
+              <SpendingBreakdownGraph />
+            </div>
+          </div>
+
+          {/**RIGTH PANEL */}
+          <div className="col-span-3 bg-red-300">Savings goals</div>
         </div>
       </div>
     </>

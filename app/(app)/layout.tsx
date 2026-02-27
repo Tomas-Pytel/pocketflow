@@ -17,7 +17,7 @@ export default function AppLayout({
         <div className="hidden md:block h-14">
           <Navbar />
         </div>
-        <div className="flex-1 overflow-y-auto p-5 pb-24 md:pb-5">
+        <div className="flex-1 overflow-y-auto p-4 pb-24 md:pb-4">
           {children}
         </div>
       </main>

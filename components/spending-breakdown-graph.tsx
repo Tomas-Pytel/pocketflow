@@ -43,18 +43,18 @@ export default function SpendingBreakdownGraph() {
   };
 
   return (
-    <div className="bg-white dark:bg-gray-800 dark:border dark:border-gray-700 rounded-xl shadow p-5 w-full">
+    <div className="flex flex-col bg-white dark:bg-gray-800 dark:border dark:border-gray-700 rounded-xl shadow p-5 w-full h-full space-y-3">
       <h2 className="text-sm font-bold text-gray-900 dark:text-white">
         Spending Breakdown
       </h2>
-      <div className="flex">
-        <div className="w-full h-36 rounded-lg flex items-start justify-start text-gray-500">
+      <div className="flex flex-1">
+        <div className="flex-1 rounded-lg justify-start text-gray-500">
           <ReactECharts
             option={option}
-            style={{ width: "80%", height: "100%" }}
+            style={{ width: "70%", height: "100%" }}
           />
         </div>
-        <div className="flex flex-col justify-center gap-2">
+        <div className="flex flex-1 flex-col justify-center gap-2 shrink-0">
           {data.map((item) => (
             <div
               key={item.name}
